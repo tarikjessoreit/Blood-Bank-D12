@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background: url('assets/images/login-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.login-container,
+.reg-container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.reg-container{
+	overflow-x: hidden;
+	align-items: baseline;
+}
+
+.login-container .login,
+.reg-container .reg{
+	width: 350px;
+	padding: 30px;
+	box-shadow: 0 0 50px #000;
+	background: #00000060;
+}
+.login-container .login a,
+.reg-container .reg a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.login-container .login .title,
+.reg-container .reg .title{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.login-container .login .login-form,
+.reg-container .reg .reg-form{}
+
+.login-container .login .login-form input,
+.login-container .login .login-form select,
+.reg-container .reg .reg-form input,
+.reg-container .reg .reg-form select{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	padding: 15px 18px;
+	border-radius: 1px;
+	border: none;
+	margin-top: 15px;
+	outline: none;
+}
+
+.login-container .login .login-form .login-btn,
+.reg-container .reg .reg-form .reg-btn{
+	background: #2196f3;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.login-container .login .social-btn,
+.reg-container .reg .social-btn{
+	display: flex;
+
+}
+.login-container .login .social-btn a,
+.reg-container .reg .social-btn a{
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	padding: 15px 18px;
+	border-radius: 1px;
+	border: none;
+	margin-top: 15px;
+	outline: none;
+	background: #2196f3;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.login-container .login .social-btn .fb-btn,
+.reg-container .reg .social-btn .fb-btn{
+	background: #e91e63;
+	text-align: center;
+}
