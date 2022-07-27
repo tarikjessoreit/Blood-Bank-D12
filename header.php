@@ -62,7 +62,7 @@
 			    <img src="assets/images/default-avatar.jpg" alt="" class="topbar-user-avater">Mr. Rofik
 			  </button>
 			  <ul class="dropdown-menu">
-			    <li><a class="dropdown-item" href="#">Profile</a></li>
+			    <li><a class="dropdown-item" href="profile.php">Profile</a></li>
 			    <li><a class="dropdown-item" href="#">Settings</a></li>
 			    <li><a class="dropdown-item" href="#">Donation Date</a></li>
 			  </ul>
