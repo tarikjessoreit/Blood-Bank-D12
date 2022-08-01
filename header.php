@@ -1,3 +1,7 @@
+<?php require "config.php"; ?>
+<?php if (!isset($_SESSION["username"]) && $_SESSION["loginstatus"]!=true) {
+			header('location:index.php');
+		}?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -65,6 +69,7 @@
 			    <li><a class="dropdown-item" href="profile.php">Profile</a></li>
 			    <li><a class="dropdown-item" href="#">Settings</a></li>
 			    <li><a class="dropdown-item" href="#">Donation Date</a></li>
+			    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
 			  </ul>
 			</div>
 	      </div>

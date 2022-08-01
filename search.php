@@ -7,7 +7,7 @@
 
 		<div class="row">
 			<!-- List Items -->
-			<div class="card col-md-4 blood-list-item gap-1">
+			<div class="card col-md-4 blood-list-item">
 			  <div class="card-body text-center">
 			  	<img src="assets/images/default-avatar.jpg" class="rounded w-75 mb-3" >
 			    <h5 class="card-title">Mr. Jobbar Hasan (O+)</h5>
@@ -29,7 +29,7 @@
 			</div>
 
 			<!-- List Items -->
-			<div class="card col-md-4 blood-list-item gap-1">
+			<div class="card col-md-4 blood-list-item">
 			  <div class="card-body text-center">
 			  	<img src="assets/images/default-avatar.jpg" class="rounded w-75 mb-3" >
 			    <h5 class="card-title">Mr. Jobbar Hasan (O+)</h5>
@@ -51,7 +51,7 @@
 			</div>
 
 			<!-- List Items -->
-			<div class="card col-md-4 blood-list-item gap-1">
+			<div class="card col-md-4 blood-list-item">
 			  <div class="card-body text-center">
 			  	<img src="assets/images/default-avatar.jpg" class="rounded w-75 mb-3" >
 			    <h5 class="card-title">Mr. Jobbar Hasan (O+)</h5>
@@ -73,7 +73,7 @@
 			</div>
 
 			<!-- List Items -->
-			<div class="card col-md-4 blood-list-item gap-1">
+			<div class="card col-md-4 blood-list-item">
 			  <div class="card-body text-center">
 			  	<img src="assets/images/default-avatar.jpg" class="rounded w-75 mb-3" >
 			    <h5 class="card-title">Mr. Jobbar Hasan (O+)</h5>
@@ -95,7 +95,7 @@
 			</div>
 
 			<!-- List Items -->
-			<div class="card col-md-4 blood-list-item gap-1">
+			<div class="card col-md-4 blood-list-item">
 			  <div class="card-body text-center">
 			  	<img src="assets/images/default-avatar.jpg" class="rounded w-75 mb-3" >
 			    <h5 class="card-title">Mr. Jobbar Hasan (O+)</h5>
@@ -115,7 +115,7 @@
 	        	</a>
 			  </div>
 			</div>
-
+			
 		</div>
 		
 	</div>

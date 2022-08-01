@@ -74,6 +74,7 @@ body{
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 2px;
+	cursor: pointer;
 }
 .login-container .login .social-btn,
 .reg-container .reg .social-btn{
@@ -101,4 +102,18 @@ body{
 .reg-container .reg .social-btn .fb-btn{
 	background: #e91e63;
 	text-align: center;
+}
+
+
+/*alert*/
+.success{
+	background: #fff;
+	padding: 10px 20px;
+	color: green;
+}
+
+.error{
+	background: #fff;
+	padding: 10px 20px;
+	color: red;
 }
