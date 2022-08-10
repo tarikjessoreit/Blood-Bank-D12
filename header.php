@@ -30,17 +30,25 @@
 	      	</li>
 	      </ul>
 
+	      <?php 
+	      $div = '';
+				$bgroup = ''; 
+				if (isset($_GET['search'])) {
+					$div = $_GET['sdivision'];
+					$bgroup = $_GET['sbgroup']; 
+				} ?>
+
 	      <form class="d-flex" role="search" action="search.php" method="get">
 	        <select name="sdivision" class="form-select" aria-label="Default select example">
 					  <option value="">Please Select Division</option>
-					  <option value="Khulna">Khulna</option>
-					  <option value="Barisal Division">Barisal Division</option>
-					  <option value="Chittagong Division">Chittagong Division</option>
-					  <option value="Dhaka Division">Dhaka Division</option>
-					  <option value="Mymensingh Division">Mymensingh Division</option>
-					  <option value="Rajshahi Division">Rajshahi Division</option>
-					  <option value="Rangpur Division">Rangpur Division</option>
-					  <option value="Sylhet Division">Sylhet Division</option>
+					  <option value="Khulna" <?php echo $div=='Khulna'?'selected':''; ?>>Khulna</option>
+					  <option value="Barisal Division" <?php echo $div=='Barisal Division'?'selected':''; ?>>Barisal Division</option>
+					  <option value="Chittagong Division" <?php echo $div=='Chittagong Division'?'selected':''; ?>>Chittagong Division</option>
+					  <option value="Dhaka Division" <?php echo $div=='Dhaka Division'?'selected':''; ?>>Dhaka Division</option>
+					  <option value="Mymensingh Division" <?php echo $div=='Mymensingh Division'?'selected':''; ?>>Mymensingh Division</option>
+					  <option value="Rajshahi Division" <?php echo $div=='Rajshahi Division'?'selected':''; ?>>Rajshahi Division</option>
+					  <option value="Rangpur Division" <?php echo $div=='Rangpur Division'?'selected':''; ?>>Rangpur Division</option>
+					  <option value="Sylhet Division" <?php echo $div=='Sylhet Division'?'selected':''; ?>>Sylhet Division</option>
 					</select>
 
 	        <select name="sbgroup" class="form-select" aria-label="Default select example">

@@ -17,51 +17,36 @@
 	            </tr>
 	        </thead>
 	        <tbody>
+
+	        	<?php 
+
+	        	$sql ="SELECT * FROM $users";
+
+	        	$res = $conn->query($sql);
+	        	if ($res->num_rows > 0) {
+	        		while ($row = $res->fetch_assoc()) { 
+	        	?>
+
 	            <tr>
-	                <td>05</td>
-	                <td>Mr. Rofik</td>
-	                <td>jessore</td>
-	                <td>O+</td>
-	                <td>2011-04-25</td>
+	                <td><?php echo $row['ID'] ?></td>
+	                <td><?php echo $row['u_name']; ?></td>
+	                <td><?php echo $row['u_village'].', '.$row['u_zilla'].', '.$row['u_division']; ?></td>
+	                <td><?php echo $row['u_blood_group']; ?></td>
+	                <td><?php echo last_donate_date($row['ID']); ?></td>
 	                <td>
 	                	<a href="" class="btn btn-sm btn-success">
 	                		<i class="fa-solid fa-pen-to-square"></i> Edit
 	                	</a>
-	                	<a href="" class="btn btn-sm btn-danger">
+	                	<a href="delete.php?uid=<?php echo $row['ID'] ?>" class="btn btn-sm btn-danger">
 	                		<i class="fa-solid fa-trash"></i> Delete
 	                	</a>
 	                </td>
 	            </tr>
-	            <tr>
-	                <td>05</td>
-	                <td>Mr. Rofik</td>
-	                <td>jessore</td>
-	                <td>O+</td>
-	                <td>2011-04-25</td>
-	                <td>
-	                	<a href="" class="btn btn-sm btn-success">
-	                		<i class="fa-solid fa-pen-to-square"></i> Edit
-	                	</a>
-	                	<a href="" class="btn btn-sm btn-danger">
-	                		<i class="fa-solid fa-trash"></i> Delete
-	                	</a>
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>05</td>
-	                <td>Mr. Rofik</td>
-	                <td>jessore</td>
-	                <td>O+</td>
-	                <td>2011-04-25</td>
-	                <td>
-	                	<a href="" class="btn btn-sm btn-success">
-	                		<i class="fa-solid fa-pen-to-square"></i> Edit
-	                	</a>
-	                	<a href="" class="btn btn-sm btn-danger">
-	                		<i class="fa-solid fa-trash"></i> Delete
-	                	</a>
-	                </td>
-	            </tr>
+	           
+	           	<?php	
+	        		}
+	        	}
+	        	?>
 	           
 	        </tbody>
 	        <tfoot>

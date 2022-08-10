@@ -25,7 +25,7 @@
 			$u_division = $_POST['udivision'];
 			$u_phone_no = $_POST['uphone_no'];
 			$u_email = $_POST['uemail'];
-			$u_password = $_POST['upass'];
+			$u_password = md5($_POST['upass']);
 			$u_profile_url = '';
 			$u_status = "active";
 

@@ -14,7 +14,7 @@
 
 		if (isset($_POST['loginbtn'])) {
 			$uname = $_POST["uname"];
-			$pass = $_POST["upassword"];
+			$pass = md5($_POST["upassword"]);
 
 			// if (empty($uname)) {
 			// 	$err="Empty user name is not allow";
@@ -30,6 +30,7 @@
 			   while($row = $result->fetch_assoc()) {
 			    $_SESSION["loginstatus"] = true;
 			    $_SESSION["username"] = $row['u_username'];
+			    $_SESSION["UserID"] = $row['ID'];
 			    // header( "refresh:2;url=dashboard.php" );
 			    header( "location:dashboard.php" );
 			  }
